@@ -1,52 +1,57 @@
-# Prerequisites
-*.d
+# Ignore all
+*
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Unignore all dirs
+!*/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Unignore self
+!*.gitignore
 
-# Precompiled Headers
-*.gch
-*.pch
+# Unignore .txt, .c, .h
+!*.txt
+!*.TXT
+!*.c
+!*.h
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Unignore markup
+!*.ad
+!*.adoc
+!*.md
+!*.MD
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Now ignore build and other temp. or IDE directories
+# which may contain these files
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# CLion project settings
+.idea/
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# VS
+.vs/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# CMake
+CMakeCache.txt
+CMakeFiles/
+*-build/
+cmake-build-debug/
+build/
+_build/
+
+# Qt-es
+object_script.*.Release
+object_script.*.Debug
+*.pro.user.*
+*.qbs.user.*
+*build-*
+
+# Qt unit tests
+target_wrapper.*
+
+# QtCreator Qml
+*.qmlproject.user.*
+
+# QtCreator CMake
+CMakeLists.txt.user*
+
+# QtCreator local machine specific files for imported projects
+*creator.user*
+
